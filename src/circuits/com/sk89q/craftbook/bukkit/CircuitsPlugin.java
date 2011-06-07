@@ -153,8 +153,8 @@ public class CircuitsPlugin extends BaseBukkitPlugin {
 
         //Self triggered
         icManager.register("MC0111", new SelfTriggerWrapper(server, new WirelessReceiver.Factory(server, true)), familySISO);
-        icManager.register("MC0260", new SelfTriggerWrapper(server, new WaterSensor.Factory(server)), familySISO);
-        icManager.register("MC0261", new SelfTriggerWrapper(server, new LavaSensor.Factory(server)), familySISO);
+        icManager.register("MC0260", new SelfTriggerWrapper(server, new WaterSensor.Factory(server, true)), familySISO);
+        icManager.register("MC0261", new SelfTriggerWrapper(server, new LavaSensor.Factory(server, true)), familySISO);
         icManager.register("MC0420", new Clock.Factory(server), familySISO);
         icManager.register("MC0421", new Monostable.Factory(server), familySISO);
 
